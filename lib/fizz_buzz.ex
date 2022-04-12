@@ -14,7 +14,8 @@ defmodule FizzBuzz do
     {:ok, result}
   end
 
-  defp handle_file_read({:error, reason}), do: {:error, "Ooops! Error while reading the file! '#{reason}'."}
+  defp handle_file_read({:error, reason}),
+    do: {:error, "Ooops! Error while reading the file! '#{reason}'."}
 
   defp trim_convert_evaluate(elem) do
     elem
